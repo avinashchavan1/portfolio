@@ -1,9 +1,6 @@
 import {
-  faAngular,
-  faAws,
   faDocker,
   faGitAlt,
-  faHtml5,
   faJsSquare,
   faNodeJs,
   faPython,
