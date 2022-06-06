@@ -12,10 +12,8 @@ import {
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
   faInstagram,
   faTwitter,
-  faHackerrank,
 } from '@fortawesome/free-brands-svg-icons'
 const Sidebar = () => {
   return (
