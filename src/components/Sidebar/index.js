@@ -3,13 +3,19 @@ import './index.scss'
 import logoS from '../../assets/images/logo-s.png'
 import logoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import {
+  faCode,
+  faEnvelope,
+  faHome,
+  faUser,
+} from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,
   faYoutube,
   faInstagram,
   faTwitter,
+  faHackerrank,
 } from '@fortawesome/free-brands-svg-icons'
 const Sidebar = () => {
   return (
@@ -62,6 +68,15 @@ const Sidebar = () => {
           <a
             target="_blank"
             rel="noreferrer"
+            href="https://leetcode.com/chavanavinash/"
+          >
+            <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
             href="https://twitter.com/Avinash3642"
           >
             <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
@@ -74,15 +89,6 @@ const Sidebar = () => {
             href="https://www.instagram.com/avinashchavan_/"
           >
             <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/avinash-chavan-1a924b142/"
-          >
-            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
           </a>
         </li>
       </ul>

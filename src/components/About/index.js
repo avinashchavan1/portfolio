@@ -33,18 +33,20 @@ const About = () => {
             />
           </h1>
           <p>
-            I am Web Developer with good knowledge of frontend and back end
-            technologies, enjoy Machine learning and have worked with Business
-            Intelligence tools{' '}
+            A Passionate and Ambitious Software Engineer with excellent problem
+            solving skills.
           </p>
           <p>
-            Enjoy Machine learning and have worked with Business Intelligence
-            tools
+            Ardent in coding and enjoy working on new technologies. Always
+            commited in to achieve best quality in software delivery.
           </p>
           <p>
-            I am Web Developer with good knowledge of frontend and back end
-            technologies, enjoy Machine learning and have worked with Business
-            Intelligence tools
+            I love❤️ working on the backend system🗄️, which involves planning,
+            developing and testing the server-side business logic.
+          </p>
+          <p>
+            Expertise in Fullstack Web development, worked on .NET Framework,
+            NLP and ML systems.
           </p>
         </div>
 

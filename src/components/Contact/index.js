@@ -3,6 +3,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 const Contact = () => {
   const [letterClass, setLettersClass] = useState('text-animate')
   const updateClass = () => {
@@ -46,9 +47,12 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am Web Developer with good knowledge of frontend and back end
-            technologies, enjoy Machine learning and have worked with Business
-            Intelligence tools
+            Get in touch👋.
+            <br />
+            Feel free to reach out to me, fillout the form below with some info
+            about the opportunity and I will get back to you as soon as I can.
+            <br />
+            Please allow me a couple of days to respond.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -85,6 +89,26 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Avinash Chavan,
+          <br />
+          Kalaburgi, Karnataka, India
+          <br />
+          Shahbad Cross, Rajapur
+          <br />
+          585102, Kalaburgi
+          <br />
+          <span>avinashchavan1443@gmail.com</span>
+        </div>
+
+        <div className="map-wrap">
+          <MapContainer center={[17.309697, 76.852393]} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[17.309697, 76.852393]}>
+              <Popup>Say Hi, to Avinash 👋 </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
