@@ -1,0 +1,34 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/1/carInsurance.jpg",
+      "title": "Insurance App",
+      "description": "ReactJs, AntDesign, NodeJs, ExpressJs, MongoDB",
+      "url": "https://insurance-client-avinash.netlify.app/"
+    },
+    {
+      "cover": "/portfolio/3/vendingMachine.jpg",
+      "title": "Vending Machine - Backend",
+      "description": "NodeJs, ExpressJs, TypeScript, TypeORM, MySQL, Chai",
+      "url": "https://github.com/avinashchavan1/vendingmachine-backend"
+    },
+    {
+      "cover": "/portfolio/2/vaccine.jpg",
+      "title": "Vaccine India",
+      "description": "Python, ReactJs, AntDesign",
+      "url": "https://vaccineindia.netlify.app/"
+    },
+    {
+      "cover": "/portfolio/4/Selflessness.jpg",
+      "title": "SelfieLess Acts",
+      "description": "Python, AWS, Docker, Javascript, HTML/CSS",
+      "url": "https://github.com/avinashchavan1/SelfieLessActs"
+    },
+    {
+      "cover": "/portfolio/5/chatting.jpg",
+      "title": "Community Chat",
+      "description": "ReactJs, NodeJS, AntDesign, GraphQL, Azure, TypeORM",
+      "url": "https://github.com/avinashchavan1/typeorm"
+    }
+  ]
+}
