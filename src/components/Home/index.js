@@ -8,7 +8,7 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLettersClass] = useState('text-animate')
-  const nameArray = [...'Avinash']
+  const nameArray = [...'vinash']
   const jobArray = [...'Software Engineer']
   const updateClass = () => {
     setLettersClass('text-animate-hover')
