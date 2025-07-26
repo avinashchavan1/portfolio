@@ -79,3 +79,120 @@
     transform: rotateX(90deg);
   }
 }
+
+// Responsive styles
+@media (max-width: 1024px) {
+  .stage-cube-cont {
+    width: 45%;
+    padding-top: 15%;
+  }
+  
+  .cubespinner {
+    transform-origin: 80px 80px 0;
+    margin-left: calc(50% - 80px);
+    
+    div {
+      width: 160px;
+      height: 160px;
+      font-size: 80px;
+    }
+    
+    .face1 {
+      transform: translateZ(80px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(80px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(80px);
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(80px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .stage-cube-cont {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding-top: 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cubespinner {
+    transform-origin: 60px 60px 0;
+    margin-left: 0;
+    
+    div {
+      width: 120px;
+      height: 120px;
+      font-size: 60px;
+    }
+    
+    .face1 {
+      transform: translateZ(60px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(60px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(60px);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .stage-cube-cont {
+    height: 250px;
+    margin-top: 30px;
+  }
+  
+  .cubespinner {
+    transform-origin: 50px 50px 0;
+    
+    div {
+      width: 100px;
+      height: 100px;
+      font-size: 50px;
+    }
+    
+    .face1 {
+      transform: translateZ(50px);
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(50px);
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(50px);
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(50px);
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(50px);
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(50px);
+    }
+  }
+}

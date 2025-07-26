@@ -1,10 +1,11 @@
-html{
+html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font:300 11px/1.4 'Helvetica Neue' , 'sans-serif';
+  font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
   color: #444;
   background: #022c43;
   overflow: hidden;
@@ -16,4 +17,49 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  .flat-button:hover,
+  .btn:hover,
+  .nav-bar a:hover,
+  .nav-bar ul li a:hover {
+    transform: none !important;
+  }
+
+  .image-box:hover .content {
+    bottom: 0 !important;
+  }
+
+  .image-box:hover:after {
+    opacity: 0.6 !important;
+  }
+}
+
+/* Prevent zoom on input focus for iOS */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    font-size: 16px;
+  }
 }

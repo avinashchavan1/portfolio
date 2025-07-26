@@ -17,6 +17,12 @@ $primary-color: #ffd700;
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
+
+// Responsive breakpoints
+$mobile: 768px;
+$tablet: 1024px;
+$desktop: 1200px;
+
 input,
 textarea {
   font-family: 'Helvetica Neue';
@@ -34,4 +40,50 @@ textarea {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+}
+
+// Mobile menu toggle
+.mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #181818;
+  border: none;
+  color: #ffd700;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
+// Responsive container adjustments
+@media (max-width: $mobile) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    height: auto;
+    min-height: 100vh;
+    position: relative;
+    top: 0;
+    margin: 0;
+  }
+  
+  .tags {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet) {
+  .container {
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
 }
